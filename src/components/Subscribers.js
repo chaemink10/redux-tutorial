@@ -15,16 +15,20 @@ const Subscribers = ({ count, addSubscriber }) => {
   );
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ subscribers }) => {
   return {
-    count: state.count,
+    count: subscribers.count,
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    addSubscriber: () => dispatch(addSubscriber()),
-  };
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     addSubscriber: () => dispatch(addSubscriber()),
+//   };
+// };
+
+const mapDispatchToProps = {
+  addSubscriber,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Subscribers);

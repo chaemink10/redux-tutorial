@@ -6,7 +6,7 @@ export const addSubscriber = () => {
   };
 };
 
-export const remobeSubscriber = () => {
+export const removeSubscriber = () => {
   return {
     type: REMOVE_SUBSCRIBER,
   };
