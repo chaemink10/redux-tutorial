@@ -1,9 +1,7 @@
 import { ADD_VIEW } from './types';
 
-const addView = () => {
+export const addView = () => {
   return {
     type: ADD_VIEW,
   };
 };
-
-export default addView;
